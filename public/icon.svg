@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180">
+  <rect width="180" height="180" rx="40" fill="#33482E"/>
+  <!-- pot -->
+  <path d="M45 82 h90 v34 a20 20 0 0 1 -20 20 h-50 a20 20 0 0 1 -20 -20 z" fill="#F5F3EC"/>
+  <!-- lid -->
+  <path d="M50 74 q40 -22 80 0 l4 8 h-88 z" fill="#E0A430"/>
+  <circle cx="90" cy="58" r="7" fill="#F5F3EC"/>
+  <!-- steam -->
+  <path d="M74 44 q6 -8 0 -16 M106 44 q-6 -8 0 -16" stroke="#F5F3EC" stroke-width="6" stroke-linecap="round" fill="none"/>
+</svg>

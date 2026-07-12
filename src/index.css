@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  /* "Enamel pot" palette: bone paper, green-black ink, deep olive primary,
+     saffron accent, soft khaki hairlines. */
+  --color-bone: #f5f3ec;
+  --color-card: #fdfcf8;
+  --color-ink: #22301f;
+  --color-ink-soft: #5c6857;
+  --color-olive: #46603f;
+  --color-olive-deep: #33482e;
+  --color-saffron: #e0a430;
+  --color-saffron-soft: #f7ead0;
+  --color-line: #ddd8c9;
+  --color-danger: #a4402f;
+
+  --font-display: "Young Serif", Georgia, serif;
+  --font-sans:
+    ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-amount:
+    ui-monospace, "SF Mono", SFMono-Regular, Menlo, Consolas, monospace;
+}
+
+html {
+  background: var(--color-bone);
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+  /* Respect iPhone safe areas when installed to home screen */
+  padding-top: env(safe-area-inset-top);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+
+/* Amount tick: a tiny pulse when the multiplier changes */
+@keyframes amount-tick {
+  0% {
+    background: var(--color-saffron-soft);
+  }
+  100% {
+    background: transparent;
+  }
+}
+.amount-tick {
+  animation: amount-tick 0.6s ease-out;
+  border-radius: 4px;
+}

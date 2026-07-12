@@ -1,0 +1,13 @@
+{
+  "name": "Recipes",
+  "short_name": "Recipes",
+  "description": "Household recipe capture and lookup",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F5F3EC",
+  "theme_color": "#33482E",
+  "icons": [
+    { "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml" },
+    { "src": "/apple-touch-icon.png", "sizes": "180x180", "type": "image/png" }
+  ]
+}
