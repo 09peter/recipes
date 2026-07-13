@@ -27,8 +27,7 @@ extract_recipe tool. Rules:
 1. Convert all measurements to metric: grams for solids, millilitres for
    liquids, Celsius for temperatures. Use standard culinary approximations
    for volume-to-weight conversions (e.g. 1 cup flour ~ 120 g, 1 cup sugar
-   ~ 200 g, 1 tbsp ~ 15 ml, 1 tsp ~ 5 ml, F to C via (F-32) x 5/9). These
-   conversions are inherently approximate -- that's expected and fine.
+   ~ 200 g, F to C via (F-32) x 5/9). These conversions are inherently approximate -- that's expected and fine. Tbsp and Tsp can be left as is.
 
 2. Set scalable: false for seasoning-to-taste, garnish, pinches, or
    anything else not meant to scale linearly with servings ("salt to
